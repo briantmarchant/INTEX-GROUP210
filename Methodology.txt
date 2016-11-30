@@ -1,0 +1,22 @@
+Project Process/Methodology
+
+We at Integrated Solutions value the input of our clients and would strive to work with Northwest Labs in every step of the project. It is important that we have this communication so that all expectations are clear and fulfilled in order to achieve this, we will implement a "Modified Waterfall" methodology.
+
+Modified Waterfall Method
+
+The modified waterfall method that we will be implementing is a method of system design that involves thorough planning and frequent verification and feedback from you the client. We will follow these steps to do this:
+
+Gather Requirements
+We are currently in this step of the system development process. We have received some high level details and are coming back with an understanding of these requirements and our suggestion of how to implement a solution. You will provide us feedback and we will then revisit the requirements before moving on.
+
+Design
+After the requirements are completely understood by both Integrated Solutions and Northwest Labs, we will move into the design phase. Here we will design the system and provide more detailed explanations and samples of what the end product will look like. After receiving feedback and revisiting the design, we will move on to the next step.
+
+Implementation
+This is where we will build the system in entirety. After building the system we will get validation and verification that everything is corrrect and meets requirements before we move to the next step in the process.
+
+Testing
+This portion of the process will include user testing (Northwest employees) as well as intensive testing on the reliability, performance, and security of the system. 
+
+Maintenance
+When testing has been completed, and is found to be satisfactory. We will deploy the system. After the system is deployed, it is agreed that Northwest Labs will maintain the system. We have suggested in the "Cost Analysis" portion of this document the implementation of a help desk team and a full time database analyst. Northwest Labs can approach Integrated Solutions for any further customization or modifications of the system as needed.

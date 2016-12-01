@@ -1,0 +1,22 @@
+Integrated Solutions has defined the following as being included within the scope of the project in accordance with the study conducted by Northwest Labs:
+
+Inclusive:
+* Sales subsystem
+* Billing subsystem
+* Order Tracking subsystem
+* Customer Account subsystem
+* Employee Account subsystem
+* Catalog subsystem
+* Managerial Reporting subsystem
+* Assay Reporting subsystem
+
+The following are subsystems that are not included in the scope of the project in accordance with the findings of the study. However, they will require work associated with the subsystems because they will interact with the system to be developed. Inputs and outputs will be account for and each of the non-inclusive subsystems and will be given access to the database.
+
+Non-Inclusive:
+* Payroll subsystem
+* Inventory subsystem
+* Scheduling subsystem
+
+All other business processes and subsystems not listed above are not currently recognized to be within the scope of this project or relating to the known business precesses. Upon acceptance of the project proposal and further requirement investigation, an updated scope definition will be prepared and approved before moving to the design phase of the project
+
+In addition to describing the proposed project, this report attempts to highlight known risks in the current business opporations and offer suggested changes to provide better reasonable assurance against fraud, damage, missuse and dissaster in accordance with COSO Enterprise Risk Management Integrated Framework practices. Integrated Solutions does not hold responsibility for the implementation of any suggested opporation or application control until agreed upon by in terms of the project contract. Suggestions for general control implementation shall be the responsibility of Northwest Labs. Application control implementation shall be the responsibility of Integrated Solutions only upon aggrement of the project. Conducting business in accordince with all accepted business controls is not the responsibility of Integrated Solutions

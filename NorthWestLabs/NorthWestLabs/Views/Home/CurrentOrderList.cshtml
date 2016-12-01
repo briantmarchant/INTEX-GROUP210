@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "CurrentOrderList";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Current Work Order List</h2>
+            <table class="table">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>Work Order</th>
+                        <th>Company Name</th>
+                        <th>Compound Arrival Date</th>
+                        <th>For Full Report</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">97544271</th>
+                        <td>Larry Clinic and Service</td>
+                        <td>11/21/2016 at 12:45:00</td>
+                        <td><a type="submit" href="@Url.Action("OrderDetails", "Home")" class="btn btn-primary">Order Details</a></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">99875632</th>
+                        <td>Larry Clinic and Service</td>
+                        <td>12/01/2016 at 08:55:00</td>
+                        <td><a type="submit" href="@Url.Action("OrderDetails", "Home")" class="btn btn-primary">Order Details</a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div>

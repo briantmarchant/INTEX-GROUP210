@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "AdHocReport";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Ad-Hoc Report</h2>
+            <form>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="exampleSelect2">Included fields</label>
+                        <select multiple class="form-control" id="exampleSelect2">
+                            <option>All</option>
+                            <option>Sales Agent</option>
+                            <option>Customer</option>
+                            <option>Lab Worker</option>
+                            <option>Type of Assay</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="exampleSelect1">Fields</label>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>All</option>
+                            <option>Work Order Number</option>
+                            <option>Assay Type</option>
+                            <option>Sales Amount</option>
+                            <option>Profit Amount</option>
+                        </select>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>All</option>
+                            <option>Work Order Number</option>
+                            <option>Assay Type</option>
+                            <option>Sales Amount</option>
+                            <option>Profit Amount</option>
+                        </select>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>All</option>
+                            <option>Work Order Number</option>
+                            <option>Assay Type</option>
+                            <option>Sales Amount</option>
+                            <option>Profit Amount</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="exampleSelect1">Criteria</label>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>Equals</option>
+                            <option>Does Not Equal</option>
+                            <option>Is Greater Than</option>
+                            <option>Is Less Than</option>
+                            <option>Is Empty</option>
+                            <option>Is NOT Empty</option>
+                        </select>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>Equals</option>
+                            <option>Does Not Equal</option>
+                            <option>Is Greater Than</option>
+                            <option>Is Less Than</option>
+                            <option>Is Empty</option>
+                            <option>Is NOT Empty</option>
+                        </select>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>Equals</option>
+                            <option>Does Not Equal</option>
+                            <option>Is Greater Than</option>
+                            <option>Is Less Than</option>
+                            <option>Is Empty</option>
+                            <option>Is NOT Empty</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="exampleTextarea">Value</label>
+                        <text class="form-control" id="exampleTextarea" rows="3"></text>
+                        <text class="form-control" id="exampleTextarea" rows="3"></text>
+                        <text class="form-control" id="exampleTextarea" rows="3"></text>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Send to my E-mail
+                        </label>
+                    </div>
+                    <a href="@Url.Action("ShowAdHocReport", "Home")" type="submit" class="btn btn-primary">Submit</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

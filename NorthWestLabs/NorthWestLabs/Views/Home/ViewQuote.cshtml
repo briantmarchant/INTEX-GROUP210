@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "ViewQuote";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Quote</h2>
+        </div>
+        <div class="col-md-4">
+            <p class="quotepad"> Biochemical Pharmacology (BP)<p />
+            <p class="quotepad">ProfilingScreen® (PF)</p>
+            <p class="quotepad">PharmaScreen® (PS)</p><hr />
+            <h4 class="quotepad"><strong>Total:</strong></h4>
+        </div>
+        <div class="col-md-4">
+            <p class="quotepad">$23432.43</p>
+            <p class="quotepad">$13424.64</p>
+            <p class="quotepad">$17537.32</p><hr />
+            <h4 class="quotepad"><strong>$54394.39</strong></h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Save Quote
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title text-center" id="myModalLabel">Associate With Account</h4>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Create New Business Lead</p>
+                            <p>Name: <input /></p>
+                            <p>Email: <input /></p>
+                            <p>Phone: <input /></p>
+                            <p>Company: <input /></p>
+                            <button class="btn btn-primary">Create</button>
+                            <p class="text-center">OR</p>
+                            <button class="btn btn-primary">Save For Existing Customer</button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.location.href='@Url.Action("Index", "Home")'">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

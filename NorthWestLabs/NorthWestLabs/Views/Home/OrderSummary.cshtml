@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "OrderSummary";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Order Summary</h2>
+        </div>
+        <div class="col-md-4">
+            <p class="quotepad"> Biochemical Pharmacology (BP)<p />
+            <p class="quotepad">ProfilingScreen® (PF)</p>
+            <p class="quotepad">PharmaScreen® (PS)</p><hr />
+            <h4 class="quotepad"><strong>Total:</strong></h4>
+        </div>
+        <div class="col-md-4">
+            <p class="quotepad">$23432.43</p>
+            <p class="quotepad">$13424.64</p>
+            <p class="quotepad">$17537.32</p><hr />
+            <h4 class="quotepad"><strong>$54394.39</strong></h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Complete Order
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title text-center" id="myModalLabel">Order Completed</h4>
+                        </div>
+                        <div class="modal-body text-center">
+                            <h2>Thank You</h2>
+                            <h3>Your Order Number is #1122343</h3>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.location.href='@Url.Action("Index", "Home")'">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

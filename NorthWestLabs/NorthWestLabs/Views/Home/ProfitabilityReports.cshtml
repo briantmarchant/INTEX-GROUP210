@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "ProfitibilityReports";
+
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Profitability Report</h2>
+            <form>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleSelect1">Reports by</label>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>Customer</option>
+                            <option>Sales Agent</option>
+                            <option>Type of Assay</option>
+                            <option>Lab Worker</option>
+                            <option>Type of Assay</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleSelect1">Time Period</label>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>All Time</option>
+                            <option>Last Week</option>
+                            <option>Last 15 Days</option>
+                            <option>Last Month</option>
+                            <option>Last 3 Months</option>
+                            <option>Last 6 Months</option>
+                            <option>Last Year</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleSelect1">Document Format</label>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>Word file</option>
+                            <option>PDF file</option>
+                            <option>Spreadsheets</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <a href="@Url.Action("ShowProfitabilityReport", "Home")" class="btn btn-primary">Submit</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

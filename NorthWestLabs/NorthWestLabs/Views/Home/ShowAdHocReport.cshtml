@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "ShowAdHocReport";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Ad-Hoc Report</h2>
+            <table class="table">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>Order Number</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Sales Amount More Than $10,000.00</th>
+                        <th>Profit Amount Less Than $1,000.00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Ottomano</td>
+                        <td>$13,453.00</td>
+                        <td>$987.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Larry</td>
+                        <td>Thorntoniano</td>
+                        <td>$10,050.00</td>
+                        <td>$807.00</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <form>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Send to E-mail
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Report</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

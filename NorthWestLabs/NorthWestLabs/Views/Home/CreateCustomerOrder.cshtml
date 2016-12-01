@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "CreateCustomerOrder";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Create New Order</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Compound Category:</h3>
+
+        </div>
+        <div class="col-md-4">
+            <h3>
+                <select>
+                    <option value="Acid">Acid</option>
+                    <option value="Base">Base</option>
+                    <option value="Carbon">Carbon</option>
+                    <option value="Hazardous" selected>Hazardous</option>
+                    <option value="Simple Metal" selected>Simple Metal</option>
+                </select>
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Assay Types</h3>
+            <p class="quotepad"> Biochemical Pharmacology (BP)<p />
+            <p class="quotepad">DiscoveryScreen® (DS)</p>
+            <p class="quotepad">ImmunoScreen® (IS)</p>
+            <p class="quotepad">ProfilingScreen® (PF)</p>
+            <p class="quotepad">PharmaScreen® (PS)</p>
+            <p class="quotepad">CustomScreen™ (CS)</p>
+            ...<a href="#">More Assays</a>
+        </div>
+        <div class="col-md-4">
+            <h3>Quantity</h3>
+            <p><input type="number" id="myNumber"></p>
+            <p><input type="number" id="myNumber"></p>
+            <p><input type="number" id="myNumber"></p>
+            <p><input type="number" id="myNumber"></p>
+            <p><input type="number" id="myNumber"></p>
+            <p><input type="number" id="myNumber"></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <a href="@Url.Action("OrderSummary", "Home")" class="btn btn-primary">Continue</a>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function myFunction() {
+        document.getElementById("myNumber").stepUp();
+    }
+</script>
+

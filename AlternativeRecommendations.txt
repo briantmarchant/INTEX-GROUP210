@@ -1,0 +1,20 @@
+Additionaly and Alternative Recommendations
+
+In addition to the recommendations included in this report, Integrated Solutions recommends the following suggestions based on the information given in the bid request. Additional recommendations of a similar will be submitted upon an in depth analysis of the project requirements and business processes
+
+* Internet access should be provided to the offices via VPN access and through a standard ISP instead of through a multi use gateway server. If remote access is required then a DMZ network should be established to ensure network integrity and to handle the authentication and authorization of any remote network connection request.
+
+* Web hosting is commonly an inexpesive alternative to owning all the hardware required to support a web app and database. However, it still can be expensive if the system requirements are not taken in to account when setting up the hosting options. We have identified Amazon AWS as a reliable web hosting service with reliable and competative pricing points. We have identified three main pricing points for the hardware required depending on the potential user base.
+ 1) 1000 users
+ 2) 750 users
+ 3) 500 users
+
+Our financial forcast for the project assumes the user base is 1000 users, however, data concerning the actual projected user base will allow us to provide a custom annual pricing model for the web hosting service. We suggest using AWS due to it's reliability, scalability and availability around the world. If Northwest Labs requires a different service then we can also work with Microsoft Azure and Web Services as well as any hardware supplier to ensure the best infrastructure for the project
+
+* Email services have become targets for a viariety of cyber attacks, social engineering schemes and even internal fraud. The increased scrutiny upon email servers and services requires that additional care is needed when updating the IT infrastructure. We recommend that Northwest Labs secure the services of a reputable email service provider. This will outsource a measure of the risk associated with the service as well as reasonably assure security and integrity of the service. We are prepared to give service recommendations based upon an analysis of the email service needs of the company.
+
+* Due to the nature of the business activities of Northwest Labs data integrity and security is of great importance. Any business that relies upon reporting for all or part of their revenue is a level of inherant data risk that is imperative assure. We recommend hiring a dedicated Database Administrator to manage and groom the developed database. Doing so will also have additional benefits of on site reporting support, historical anylitics and role support. Choosing a DBA with the appropriate skills would be important and raise the cost of system mainenance but would comfortably save the company from lost of data and therefore  high volumes of revenue.
+
+* In order to recapture a portion of the maintenance costs, the preliminary design allows for ability to change the business revenue model to charge customer accounts for assay report archival storage. A storage or time availability threshold can be established at the descretion of management. Pricing for the threshold or limit can be applied and updated liberally.
+
+* Earlier in the report was the mention of risk in relation to identifying, applying and authorizing discounts to specific work orders. The risk is primarily associated with a lack of separation of duties. Our preliminary design purposefully does not represent these use cases specifically to recognize that a change needs to occur under the direction of Northwest Labs management. Business strategy and financial modeling should be consulted before attempting to design system components that support the discounting activities. We suggest shifting responsibility, applying account level discounts, using an enterprise pricing model or the equivelant in order to control the discounting process by we recognize the such changes could disrupt business processes and further discussion is needed in this area.

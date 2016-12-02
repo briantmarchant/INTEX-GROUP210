@@ -7,6 +7,8 @@ Created:	12/01/2016 IS
 Modified:	12/01/2016 IS
   
 Version:     	1.0
+
+Created By:	Nathan Barton, Henrique Bronovski, Brian Marchant 		Shane Whitlock
 ******************************************************************/
 
 This website is a demo for Northwest Labs for their new system built by Integrated Solutions.

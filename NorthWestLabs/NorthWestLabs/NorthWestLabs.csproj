@@ -176,7 +176,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\CustomStyleSheet.css" />
-    <Content Include="Content\Images\background.png" />
+    <Content Include="Content\Images\imageplaceholder.png" />
     <Content Include="Content\Images\LabPhoto1.png" />
     <Content Include="Content\Images\labPhoto2.png" />
     <Content Include="Content\Images\LabPhoto3.png" />

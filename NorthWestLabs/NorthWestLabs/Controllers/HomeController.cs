@@ -3,11 +3,45 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace NorthWestLabs.Controllers
 {
     public class HomeController : Controller
     {
+        //for the log in
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Login(FormCollection form, bool rememberMe = false)
+        {
+            //this will test if it is the authenticated user that we want.
+            String email = form["Email address"].ToString();
+            String password = form["Password"].ToString();
+            if (string.Equals(email, "Customer") || string.Equals(email, "LabWorker") || string.Equals(email, "Manager") || string.Equals(email, "Master"))
+            {
+                FormsAuthentication.SetAuthCookie(email, rememberMe);
+                Session["user"] = email;
+                //use @Session["user"] in HTML to get this value
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return View();
+            }
+        }
+        public ActionResult LogOff()
+        {
+            //clears the session variable
+            Session.Clear();
+            FormsAuthentication.SignOut();
+            Session.Abandon();
+            return RedirectToAction("Index", "Home");
+        }
+
         public ActionResult Index()
         {
             return View();
@@ -66,7 +100,10 @@ namespace NorthWestLabs.Controllers
             return View();
         }
 
-
+        public ActionResult WorkOrderDetails()
+        {
+            return View();
+        }
 
         public ActionResult HourlyChargeRate()
         {

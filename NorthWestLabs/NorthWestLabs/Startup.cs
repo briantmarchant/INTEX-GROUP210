@@ -8,7 +8,7 @@ namespace NorthWestLabs
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
+            //ConfigureAuth(app);
         }
     }
 }

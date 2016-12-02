@@ -176,6 +176,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\CustomStyleSheet.css" />
+    <Content Include="Content\Images\background.png" />
     <Content Include="Content\Images\LabPhoto1.png" />
     <Content Include="Content\Images\labPhoto2.png" />
     <Content Include="Content\Images\LabPhoto3.png" />
@@ -257,6 +258,8 @@
     <Content Include="Views\Home\CreateCustomerOrder.cshtml" />
     <Content Include="Views\Home\OrderSummary.cshtml" />
     <Content Include="Views\Home\OrderDetails.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\WorkOrderDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

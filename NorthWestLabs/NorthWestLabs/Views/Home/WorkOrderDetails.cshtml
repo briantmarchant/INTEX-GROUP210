@@ -6,95 +6,47 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Compound Status</h2>
+            <h2>Work Order Details</h2>
             <table class="table">
                 <thead class="thead-inverse">
                     <tr>
                         <th>Item ID</th>
                         <th>Assay Type</th>
                         <th>Assay Started Date</th>
-                        <th>Assay Completition Date</th>
-                        <th>Status</th>
-
+                        <th>Total hours Worked</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td scope="row">985346</td>
-                        <td>ProfilingScreen® (PF)</td>
+                        <th scope="row">985346</th>
+                        <td>Name of Assay</td>
                         <td>11/21/2016 at 12:45:00</td>
+                        <td>21</td>
+                        <td><a href="@Url.Action("AssayDetails", "Home")" type="submit" class="btn btn-primary">Update Details</a></td>
+                    <tr>
+                        <th scope="row">894564</th>
+                        <td>Name of Assay</td>
                         <td>11/23/2016 at 12:45:00</td>
-                        <td>Completed</td>
+                        <td>2</td>
+                        <td><a href="@Url.Action("AssayDetails", "Home")" type="submit" class="btn btn-primary">Update Details</a></td>
                     </tr>
                     <tr>
-                        <td scope="row">985347</td>
-                        <td>Biochemical Pharmacology (BP)</td>
+                        <th scope="row">985346</th>
+                        <td>Name of Assay</td>
                         <td>11/21/2016 at 12:45:00</td>
-                        <td>                      </td>
-                        <td>Testing In Progress</td>
+                        <td>12</td>
+                        <td><a href="@Url.Action("AssayDetails", "Home")" type="submit" class="btn btn-primary">Update Details</a></td>
                     </tr>
                     <tr>
-                        <td scope="row">985348</td>
-                        <td>DiscoveryScreen® (DS)</td>
-                        <td>11/23/2016 at 12:45:00</td>
-                        <td>11/23/2016 at 12:45:00</td>
-                        <td><strong style="color:red">Authorization Pending</strong></td>
-                    </tr>
-
-                </tbody>
-            </table>
-            <h2>Futher Test Recomendation</h2>
-            <table class="table">
-                <thead class="thead-inverse">
-                    <tr>
-                        <th>Item ID</th>
-                        <th>Assay Type</th>
-                        <th>Explanation</th>
-                        <th>Quoted Price</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td scope="row">985348</td>
-                        <td>ImmunoScreen® (IS)</td>
-                        <td>Unable to get necessary results</td>
-                        <td>$390,00</td>
-                        <td>
-                            <strong style="color:red">Authorization Pending</strong>
-
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                                Approve
-                            </button>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h3 class="modal-title text-center" id="myModalLabel">Approved Changes</h3>
-                                        </div>
-                                        <div class="modal-body text-center">
-                                            <h2>Thank You!</h2>
-                                            <h3>An email has been sent to JorgeClinton@gmail.com</h3>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="window.location.href='@Url.Action("Index", "Home")'">OK</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                        </td>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td><strong>Total:</strong></td>
+                        <td>35</td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
 </div>
-
-

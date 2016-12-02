@@ -7,7 +7,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Styles.Render("~/Content/CustomStyleSheet")
-    
+
     <link href="~/Content/CustomStyleSheet.css" rel="stylesheet" type="text/css" />
 
 </head>
@@ -27,107 +27,202 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>
-                       
+                    @{
+                        try
+                        {
+                            if (Session["User"].Equals("Master") || Session["User"].Equals("Manager"))
+                            {
+                                <li>
 
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sales<b class="caret"></b></a>
-                                <ul class="dropdown-menu multi-level">
-                                    <li class="dropdown-submenu">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Order Quotes</a>
-                                        <ul class="dropdown-menu">
-                                            <li>@Html.ActionLink("Create Quote", "CreateQuote", "Home")</li>
-                                            <li><a href="#">View Quote By Customer</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer Orders</a>
-                                        <ul class="dropdown-menu">
-                                            <li>@Html.ActionLink("Create an Order", "CreateOrder", "Home")</li>
-                                            <li><a href="#">Lookup Past Order</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Business Leads</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Create New Business Lead</a></li>
-                                            <li><a href="#">View Business Leads</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                       
-                       <!-- 
-                    <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Orders<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Create New Order</a></li>
-                            <li>@Html.ActionLink("See My Current Orders", "CurrentOrderList", "Home")</li>
-                            <li><a href="#">@Html.ActionLink("See My Past Orders", "PastOrderList", "Home")</a></li>
-                            <li><a href="#">Search For an Order</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Billing<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Create Invoice</a></li>
-                            <li>@Html.ActionLink("Update Hourly Charge Rate", "HourlyChargeRate", "Home")</li>
-                        </ul>
-                    </li>
-                        -->
-                    <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Order Tracking<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Work Orders", "WorkOrders", "Home")</li>
-                            <li class="dropdown-submenu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Receiving</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Compound Reciept Log</a></li>
-                                    <li><a href="#">Compound Weighing and Despensing Log</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accounts<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Customer List</a></li>
-                            <li><a href="#">Employee List</a></li>
-                            <li><a href="#">Employee Schedule</a></li>
-                            <li><a href="#">Employee Timesheet</a></li>
-                            <li class="dropdown-submenu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Create New Account</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Create Customer Account</a></li>
-                                    <li><a href="#">Create Employee Account</a></li>
-                                    <li><a href="#">Create Manager Account</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--
-                    <li>
-                        <a href="#">Inventory</a>
-                    </li>
-                    -->
+
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sales<b class="caret"></b></a>
+                                    <ul class="dropdown-menu multi-level">
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Order Quotes</a>
+                                            <ul class="dropdown-menu">
+                                                <li>@Html.ActionLink("Create Quote", "CreateQuote", "Home")</li>
+                                                <li><a href="#">View Quote By Customer</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer Orders</a>
+                                            <ul class="dropdown-menu">
+                                                <li>@Html.ActionLink("Create an Order", "CreateOrder", "Home")</li>
+                                                <li><a href="#">Lookup Past Order</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Business Leads</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Create New Business Lead</a></li>
+                                                <li><a href="#">View Business Leads</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                            }
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+                    @{
+                        try
+                        {
+                            if (Session["User"].Equals("Master") || Session["User"].Equals("Customer"))
+                            {
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Orders<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Create New Order</a></li>
+                                        <li>@Html.ActionLink("See My Current Orders", "CurrentOrderList", "Home")</li>
+                                        <li><a href="#">@Html.ActionLink("See My Past Orders", "PastOrderList", "Home")</a></li>
+                                        <li><a href="#">Search For an Order</a></li>
+                                    </ul>
+                                </li>
+                            }
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+                    @{
+                        try
+                        {
+                            if (Session["User"].Equals("Master") || Session["User"].Equals("Manager"))
+                            {
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Billing<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        @if (Session["User"].Equals("Master"))
+                                        {
+                                        <li><a href="#">Create Invoice</a></li>
+                                        }
+                                        <li>@Html.ActionLink("Update Hourly Charge Rate", "HourlyChargeRate", "Home")</li>
+                                    </ul>
+                                </li>
+                            }
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+
+                    @{
+                        try
+                        {
+                            if (Session["User"].Equals("Master"))
+                            {
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Order Tracking<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>@Html.ActionLink("Work Orders", "WorkOrders", "Home")</li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Receiving</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Compound Reciept Log</a></li>
+                                                <li><a href="#">Compound Weighing and Despensing Log</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            }
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+                    @{
+                        try
+                        {
+                            if (Session["User"].Equals("Master"))
+                            {
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accounts<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Customer List</a></li>
+                                        <li><a href="#">Employee List</a></li>
+                                        <li><a href="#">Employee Schedule</a></li>
+                                        <li><a href="#">Employee Timesheet</a></li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Create New Account</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Create Customer Account</a></li>
+                                                <li><a href="#">Create Employee Account</a></li>
+                                                <li><a href="#">Create Manager Account</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            }
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+                    @{
+                        try
+                        {
+                            if (Session["User"].Equals("Master"))
+                            {
+                                <li>
+                                    <a href="#">Inventory</a>
+                                </li>
+                            }
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+
                     <li>
                         <a href="#">Catalog</a>
                     </li>
-                    
-                    <li>
-                        <a href="#">Lab Schedule</a>
-                    </li>
-                    <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Customer Reports</a></li>
-                            <li><a href="#">Performance Reports</a></li>
-                            <li>@Html.ActionLink("Profitability Reports", "ProfitabilityReports", "Home")</li>
-                            <li><a href="#">Monthtly Sales Reports</a></li>
-                            <li>@Html.ActionLink("Ad-Hoc Reports", "AdHocReport", "Home")</li>
-                        </ul>
-                    </li>
-                    
-                            
+                    @{
+                        try
+                        {
+                            if (Session["User"].Equals("Master"))
+                            {
+                                <li>
+                                    <a href="#">Lab Schedule</a>
+                                </li>
+                            }
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+                    @{
+                        try
+                        {
+                            if (Session["User"].Equals("Master"))
+                            {
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Customer Reports</a></li>
+                                        <li><a href="#">Performance Reports</a></li>
+                                        <li>@Html.ActionLink("Profitability Reports", "ProfitabilityReports", "Home")</li>
+                                        <li><a href="#">Monthtly Sales Reports</a></li>
+                                        <li>@Html.ActionLink("Ad-Hoc Reports", "AdHocReport", "Home")</li>
+                                    </ul>
+                                </li>
+                            }
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+
 
                 </ul>
                 @Html.Partial("_LoginPartial")
@@ -142,7 +237,7 @@
         </footer>
     </div>
 
- 
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

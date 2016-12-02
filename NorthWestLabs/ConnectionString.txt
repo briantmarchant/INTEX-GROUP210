@@ -1,0 +1,14 @@
+/*****************************************************************
+  File:		ConnectionString.TXT
+Description: 	Connection String for NORTHWEST_LAB Database and NorthwestLabs C#/ASP.net Program
+Created:	12/01/2016 IS
+  
+Modified:	12/01/2016 IS
+  
+Version:     	1.0
+******************************************************************/
+
+
+Connection String: 
+
+Data Source=BMARCH-ACERR14\SQLEXPRESS;Initial Catalog=NORTHWEST_LAB;Integrated Security=True

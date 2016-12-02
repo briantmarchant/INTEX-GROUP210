@@ -105,6 +105,11 @@ namespace NorthWestLabs.Controllers
             return View();
         }
 
+        public ActionResult AssayDetails()
+        {
+            return View();
+        }
+
         public ActionResult HourlyChargeRate()
         {
             return View();

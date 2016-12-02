@@ -23,7 +23,7 @@ Customer: Can Orders, and Catalog menu options
 
 Labworker: Can view Order Tracking, Inventory, Lab Schedule
 
-Manager: Can view Sales, Billing(only "Update Hourly Rate" option), Accounts, Reports
+Manager: Can view Sales, Billing(only "Update Hourly Rate" option), Order Tracking Accounts, Reports
 
 All Menu options that are not represented above outside of "Master" will be viewed by users that are not represented in our list of users at the moment. These include Billing, Technical Director etc. 
 

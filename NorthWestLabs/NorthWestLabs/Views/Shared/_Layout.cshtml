@@ -115,7 +115,7 @@
                     @{
                         try
                         {
-                            if (Session["User"].Equals("Master"))
+                            if (Session["User"].Equals("Master") || Session["user"].Equals("Manager") || Session["user"].Equals("LabWorker"))
                             {
                                 <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Order Tracking<b class="caret"></b></a>
@@ -140,7 +140,7 @@
                     @{
                         try
                         {
-                            if (Session["User"].Equals("Master"))
+                            if (Session["User"].Equals("Master") || Session["User"].Equals("Manager"))
                             {
                                 <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accounts<b class="caret"></b></a>
@@ -169,7 +169,7 @@
                     @{
                         try
                         {
-                            if (Session["User"].Equals("Master"))
+                            if (Session["User"].Equals("Master") || Session["user"].Equals("LabWorker"))
                             {
                                 <li>
                                     <a href="#">Inventory</a>
@@ -188,7 +188,7 @@
                     @{
                         try
                         {
-                            if (Session["User"].Equals("Master"))
+                            if (Session["User"].Equals("Master") || Session["user"].Equals("LabWorker"))
                             {
                                 <li>
                                     <a href="#">Lab Schedule</a>
@@ -203,7 +203,7 @@
                     @{
                         try
                         {
-                            if (Session["User"].Equals("Master"))
+                            if (Session["User"].Equals("Master") || Session["User"].Equals("Manager"))
                             {
                                 <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports<b class="caret"></b></a>
